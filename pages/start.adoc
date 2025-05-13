@@ -1,4 +1,4 @@
-= Start
+= Identité
 :imagesdir: assets/default/images
 
 == !
@@ -7,9 +7,16 @@ image::littlejo.jpg[]
 
 [NOTE.speaker]
 ====
-* Tech lead Onepoint depuis 3 ans
-* 13 ans de carrière dans le web d'abord puis dans le devops
-* Industrialisation : la flemme de faire toujours la même chose
-* Découverte de docker pour les env de dev (Vagrant sur windows, c'était pas ouf)
-* Puis docker en prod
+* Ingénieur cloud
+* Ambassadeur CNCF
+* Kubestronaute
+* Spécialisé dans la Cilium
 ====
+
+== 🔍 Dossiers Classifiés 🔍
+
+* Auteur d’un blog tech dédié à eBPF et Cilium
+* Contributeur à la certification Cilium (CCA)
+* Créateur d’un provider : Tf / Pulumi / Crossplane pour déployer Cilium
+* Commits validés dans le repo officiel
+* Déclaré Labs Champion
