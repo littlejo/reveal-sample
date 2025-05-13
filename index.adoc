@@ -22,7 +22,7 @@ a|[.yann-intro-title]
 Sample conf: please copy paste
 
 [.yann-intro-event]
-Yann Day : 9 juin 1987
+Sunny tech : 27 juin 2025
 |===
 
 include::pages/start.adoc[leveloffset=+1]
