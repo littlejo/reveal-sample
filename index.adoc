@@ -4,7 +4,7 @@
 :revealjs_theme: black
 :revealjs_progress: true
 :revealjs_history: true
-:customcss: ./styles/yannschepens/stylesheets/style.css
+:customcss: ./styles/perso/stylesheets/style.css
 :revealjsdir: ./node_modules/reveal.js
 :revealjs_defaultTiming: 40
 
@@ -12,7 +12,7 @@
 [cols="1,2",frame=none,grid=none]
 |===
 a|[.yann-intro]
-image::styles/yannschepens/images/yann-square.png[yann]
+image::styles/perso/images/yann-square.png[yann]
 [.yann-name]
 Yann Schepens
 [.yann-role]
