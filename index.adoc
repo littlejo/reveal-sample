@@ -12,17 +12,18 @@
 [cols="1,2",frame=none,grid=none]
 |===
 a|[.yann-intro]
-image::styles/perso/images/yann-square.png[yann]
+image::assets/default/images/littlejo.jpg[yann]
 [.yann-name]
-Yann Schepens
+Joseph Ligier
 [.yann-role]
-Tech Lead +
-@onepoint
+Ingénieur Cloud
+Ambassadeur CNCF
+Kubestronaute
 a|[.yann-intro-title]
-Sample conf: please copy paste
+Mission Impossible : 511 Meshed Kubernetes
 
 [.yann-intro-event]
-Sunny tech : 27 juin 2025
+Sunny tech : 26 juin 2025
 |===
 
 include::pages/start.adoc[leveloffset=+1]
