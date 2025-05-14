@@ -1,0 +1,83 @@
+= Présentation du terrain d'action
+:imagesdir: assets/default/images
+
+== Choix stratégique : AWS EKS
+
+[NOTE.speaker]
+====
+🧭 Pourquoi EKS ?
+* ✅ maîtrise d'AWS et d'EKS
+* 🛡️ Confiance pour supporter 511 clusters
+* 🧪 Sandbox gratuite
+
+💰 Bonus d'infiltration :
+* 🔐 Des coupons spéciaux
+====
+
+== Limites imposées par AWS
+
+[NOTE.speaker]
+====
+📏 Réalité du terrain :
+  * Impossible de créer plus de 100 clusters EKS
+
+🗣️ Procédure d’obtention : Négociation avec AWS
+
+⏳ Résultat : plusieurs semaines de pourparlers.
+
+🚪 Conclusion : AWS refuse 511 sur un seul compte
+
+✅ Solution trouvée : limite négociée à 256 clusters
+====
+
+== Bonnes pratiques vs Réalité opérationnelle
+
+💡 Recommandation officielle d’AWS : “Un VPC par cluster EKS”
+
+[NOTE.speaker]
+====
+💡 Recommandation officielle d’AWS : “Un VPC par cluster EKS”
+
+🚫 Limite réelle : “Max 5 VPCs par région.”
+
+🧨 Plan B activé : “Un seul VPC pour tous les clusters.”
+
+🧩 Résultat :
+* Anti-pattern complet ✅
+====
+
+== Solution déployée
+
+image::aws-archi.png[width=50%]
+
+[NOTE.speaker]
+====
+🎯 Objectif : Créer, connecter et tester jusqu’à 256 clusters Kubernetes
+====
+
+== Tentative de paralléliser les connexions inter-clusters
+
+image::connection-answer.png[width=45%]
+[NOTE.speaker]
+====
+Contrainte : Pas de création des connexions d'un même cluster en parallèle
+====
+
+== Premier résultat avec 16 clusters
+
+[NOTE.speaker]
+====
+❌ Mur technique détecté :
+* 📦 Trop d’objets Pulumi → explosion de la RAM 💥
+* 🔁 Connexions entre clusters → explosion du CPU
+  * 1 connexion ≈ 1 CPU utilisé
+  * 128 connexions = 128 CPUs ? 😅
+
+📉 Résultat :
+* ✅ 16 clusters connectés
+* ⏱️ 45 minutes…
+* 🚫 Bien trop long pour 511 clusters
+
+💡 Conclusion :
+    Il faut une autre stratégie de connexion.
+====
