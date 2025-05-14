@@ -1,7 +1,7 @@
 = Entraînement de l'agent
 :imagesdir: assets/default
 
-== Terrain d’exercice : Kind
+== Terrain d’exercice : KinD
 
 * Un seul serveur
 * Docker
@@ -26,4 +26,50 @@ Distribution Kubernetes
 * "Gratuit"
 * VM temporaires avec 4 CPU pour simuler des missions
 * Tests en environnement contrôlé
+====
+
+== Infrastructure as code
+
+* Terraform / Opentofu
+* Pulumi
+* Crossplane
+
+[NOTE.speaker]
+====
+🧭 Mission : Créer, gérer et éliminer 511 clusters… sans faille.
+
+🎯 Objectif : Choisir l'outil idéal pour des déploiements
+
+🧰 Options du QG :
+  * Terraform / Opentofu
+  * Pulumi
+  * Crossplane
+
+🕶️ Décision :
+  * Pulumi
+====
+
+== Pulumi
+
+* Infra as real code
+* Python
+[NOTE.speaker]
+====
+
+====
+
+== Limite de KinD
+
+Combien de clusters Kubernetes peut-on créer ?
+
+[NOTE.speaker]
+====
+🎛️ Matériel utilisé :
+  * 🖥️ 16 CPU — 🧠 32 Go de RAM
+
+🚫 Résultat :
+  * Blocage à 15 clusters maximum
+  * Temps de déploiement : 45 minutes
+
+💣 Bien trop long pour 511 clusters.
 ====
