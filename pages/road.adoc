@@ -1,0 +1,98 @@
+= 🚀 En route vers les 256 clusters
+:imagesdir: assets/default/images
+
+== création des connexions 🧨
+image::code-cilium-cli.png[width=80%]
+
+[NOTE.speaker]
+====
+🛠️ Outils de l’agent :
+* 🧬 Pulumi pour l’Infra as Code
+* 🛡️ Provider custom : pulumi-cilium
+* 🧪 Le provider s’appuie sur les bibliothèques Go de la CLI Cilium
+* ⚡ La CLI déclenche la connexion entre deux clusters
+====
+
+== Algorithme d’interconnexion de 2 clusters
+
+* 📡 Extraction des données du cluster A
+* 📡 Extraction des données du cluster B
+* 🔧 Mise à jour de la config sur A
+* 🔧 Mise à jour de la config sur B
+
+
+[NOTE.speaker]
+====
+* 📡 Extraction des données de Cluster Mesh sur A
+* 📡 Extraction des données de Cluster Mesh sur B
+* 🔧 Mise à jour de la config sur A
+* 🔧 Mise à jour de la config sur B
+
+🤔 "On peut paralléliser les helm upgrade, non ?"
+
+💥 Résultat : CPU en feu.
+
+* Généraliser l’algorithme pour N clusters.
+====
+
+== Algorithme généralisé pour n clusters
+
+* 📡 Extraction des données (par cluster)
+* 🔧 Mise à jour de la config (par cluster)
+
+[NOTE.speaker]
+====
+🎯 Objectif : Connecter N clusters efficacement
+
+En théorie : pour 511 clusters on metterait environ une heure
+====
+
+== La Pull Request
+
+image::pr.png[]
+
+== 🧪 **32 clusters**
+
+[cols="1,1", options="header"]
+|===
+| Étape | Durée
+
+| 🔧 *Création connexions*
+| 5 minutes
+
+| ⏳ *Déploiement total*
+| 17 minutes
+
+|===
+
+[NOTE.speaker]
+====
+🎯 Mise en œuvre de l’algorithme séquentiel sur une flotte de 32 clusters.
+====
+
+== Amélioration : parallélisation
+
+🔧 Mise à jour des clusters — parallélisé ✅
+
+image::pr-2.png[]
+
+[NOTE.speaker]
+====
+Avec 32 tâches en parallèle on pourrait créer les connexions de 511 clusters en moins de 3 minutes
+====
+
+== 🧪 **64 clusters**
+
+[cols="1,1,1", options="header"]
+|===
+| Clusters | Déploiement total | Connexions
+
+| 32
+| 17 minutes
+| 5 minutes
+
+| 64
+| 15 minutes
+| 2 minutes
+
+|===
