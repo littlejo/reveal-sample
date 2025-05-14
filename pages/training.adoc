@@ -1,0 +1,29 @@
+= Entraînement de l'agent
+:imagesdir: assets/default
+
+== Terrain d’exercice : Kind
+
+* Un seul serveur
+* Docker
+
+[NOTE.speaker]
+====
+Distribution Kubernetes
+* Kubernetes IN Docker
+
+📍 Pourquoi Kind ?
+* 🔁 Rapide à déployer
+* 🛠️ Idéal pour les tests et les expérimentations
+====
+
+== CI/CD : GitHub Action
+
+[NOTE.speaker]
+====
+* Mission répétable à volonté
+* Automatisation totale
+  *  Chaque commit, chaque PR, déclenche un test de déploiement
+* "Gratuit"
+* VM temporaires avec 4 CPU pour simuler des missions
+* Tests en environnement contrôlé
+====
