@@ -1,0 +1,195 @@
+= Contexte de la mission
+:imagesdir: assets/default
+
+== 511 clusters Kubernetes
+
+[NOTE.speaker]
+====
+* Kubernetes: orchestrateur de containeurs
+
+🕒 Contraintes temporelles :
+* Durée de création d'un cluster: minimum 5 minutes
+
+🪂 Approche stratégique : y aller palier par palier
+
+🛠️ Outils : Infrastructure As Code:
+* automatisation
+* répétitivité
+* changement du nombre de clusters rapide
+====
+
+== Couche réseau
+=== Plugin Container Network Interface (CNI)
+
+[NOTE.speaker]
+====
+Objectif principal: Établir une communication entre containers sur des serveurs distincts.
+* Technologies en présence :
+  * 🐆 Calico
+  * 🔁 Kube-router
+  * 🧬 Cilium
+====
+
+== !
+=== Kube-Proxy
+
+[NOTE.speaker]
+====
+Objectif principal: Load balancer du réseau Kubernetes
+
+* Mode d’activation : Déclenché à la création d’une ressource *Service*
+* Technologie utilisée :
+  * Basé sur iptables
+  * ipvs (alternative plus performante)
+  * nftables (remplaçant imminent)
+====
+
+== Cilium
+
+👁️ Hubble
+
+🔐 CNP & chiffrement
+
+🧬 Service Mesh intégré
+
+🏎️ Suppression de kube-proxy
+
+[NOTE.speaker]
+====
+Exemple de fonctionnalité :
+* 👁️ Hubble — Observabilité réseau
+* 🔐 CNP & chiffrement — Zéro trust
+* 🧬 Service Mesh intégré
+* 🏎️ Suppression de kube-proxy
+
+Technologies embarquées :
+* eBPF: exécute du code dans le noyau à la volée
+====
+
+== Cilium Cluster Mesh
+
+[NOTE.speaker]
+====
+🎯 Objectif :
+  * Permettre à des pods situés dans des clusters distants de se parler
+  * Pas de LoadBalancer
+
+🚧 Conditions d’activation :
+  * 🔀 Réseaux de pods disjoints
+  * 🌍 Noeuds routables entre clusters
+  * ⛔ Limite classique : 255 clusters
+  * 🧪 Nouveauté 1.15 : 511 clusters possibles
+====
+
+== Communication entre deux clusters
+
+[NOTE.speaker]
+====
+* Configurations Mesh disponibles :
+  * Cas 1 — A <=> B : Communication bidirectionnelle
+  * Cas 2 — A => B : Un canal unilatéral
+  * Cas 3 — A <= B : L’inverse, toujours à sens unique
+====
+
+== Communication entre 511 clusters
+
+video::256-clusters.mp4[opts=autoplay,loop,muted,role=center,width=50%]
+
+[NOTE.speaker]
+====
+📈 Nombre total de communications à établir :
+  * 🧮 511×510/2 = 130 305 liens
+  * 🕒 Durée de création d’un lien : 15 secondes
+  * Temps total estimé : ⏱️ 542 heures (22 jours)
+
+* Comment paralléliser ?
+====
+
+
+== Vérification de la communication
+🎯 s’assurer que la connexion est opérationnelle.
+
+[NOTE.speaker]
+====
+🎯 s’assurer que la connexion est opérationnelle.
+
+* Ennemis à défier :
+  * ⏳ Temps de test long
+  * 🧩 Taille des serveurs réduite = ressources limitées
+====
+
+== Déroulé des opérations
+
+💰 Budget serré
+
+🌫️ Solution Cloud
+
+[NOTE.speaker]
+====
+* Création massive sous haute contrainte :
+* ⏳ 4 heures chrono pour l’intégralité de l’opération.
+====
+
+== Déroulé de chaque opération
+
+🚀 Provisionner les 511 clusters
+
+🔗 Connecter chacun à tous les autres
+
+🧪 Tester la communication
+
+💣 Détruire proprement
+
+🧼 Vérifier que rien n’a survécu
+
+== Briser le quatrième mur
+
+🎬 asciinema
+
+🎞️ Kdenlive
+
+🌍 YouTube
+
+[NOTE.speaker]
+====
+📹 Objectif : Documenter l'opération seconde par seconde
+
+🧰 Outils d’enregistrement :
+* 🖥️ asciinema : capture du terminal
+* 🎞️ asciinema-scene : rythme et tension
+
+Post-prod:
+* 🎬 Kdenlive : effets visuels et explication
+
+🌍 Diffusion :
+* 📡 Upload sur YouTube
+====
+
+= Entraînement de l'agent
+
+== Terrain d’exercice : Kind
+
+* Un seul serveur
+* Docker
+
+[NOTE.speaker]
+====
+Distribution Kubernetes
+* Kubernetes IN Docker
+
+📍 Pourquoi Kind ?
+* 🔁 Rapide à déployer
+* 🛠️ Idéal pour les tests et les expérimentations
+====
+
+== CI/CD : GitHub Action
+
+[NOTE.speaker]
+====
+* Mission répétable à volonté
+* Automatisation totale
+  *  Chaque commit, chaque PR, déclenche un test de déploiement
+* "Gratuit"
+* VM temporaires avec 4 CPU pour simuler des missions
+* Tests en environnement contrôlé
+====
