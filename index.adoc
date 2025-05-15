@@ -1,6 +1,7 @@
 [.entrypoint]
 = !
 :source-highlighter: highlightjs
+:highlightjs-languages: bash
 :revealjs_theme: black
 :revealjs_progress: true
 :revealjs_history: true
@@ -31,7 +32,7 @@ include::pages/context.adoc[leveloffset=+1]
 include::pages/training.adoc[leveloffset=+1]
 include::pages/action.adoc[leveloffset=+1]
 include::pages/road.adoc[leveloffset=+1]
-include::pages/sample.adoc[leveloffset=+1]
+include::pages/check.adoc[leveloffset=+1]
 include::pages/end.adoc[leveloffset=+1]
 
 

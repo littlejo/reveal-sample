@@ -1,0 +1,67 @@
+= Vérification en conditions réelles
+
+== 🕵️ Surveillance passive
+
+[source,bash]
+----
+cilium status
+cilium clustermesh status
+----
+
+[NOTE.speaker]
+====
+* trop verbeux
+* 🚫 pas une **preuve de connectivité**
+====
+
+== 🧬 Analyse poussée
+
+[source,bash]
+----
+cilium status -o json
+cilium clustermesh status -o json
+----
+
+[NOTE.speaker]
+====
+* 📊 Données plus exploitables
+* 🤖 Idéal pour un tableau de bord
+* 🚫 Toujours pas une **preuve de connectivité**
+====
+
+== Test de connectivité
+
+[source,bash]
+----
+cilium connectivity test --context cluster1 --multi-cluster cluster2
+----
+
+[NOTE.speaker]
+====
+* 🔍 Lance une **batterie de tests**
+* ⏱️ **Durée moyenne : ~5 minutes**
+* 🧪 Parfait pour un **diagnostic entre deux clusters**
+
+* Le test ne vérifie que **1 ➜ 2**
+  * Pas de retour automatique **2 ➜ 1**
+* Pour 511 clusters, le nombre de tests possibles :
+  => **130 305** connexions à tester si on veut du **full mesh bidirectionnel**
+====
+
+== Développement d’un outil de test
+
+* Modifier la cilium cli :
+
+[source,bash]
+----
+cilium connectivity test --context cluster1 --multi-cluster cluster[2-511]
+----
+
+* Utiliser **Terratest**
+
+== Terratest
+
+🛠️ Projet disponible ici :
+
+* 👉 https://github.com/littlejo/check-cilium-clustermesh
+* ✅ 5 tests différents
