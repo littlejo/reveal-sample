@@ -1,0 +1,72 @@
+= 🧗 Objectif 256 clusters
+
+== Passage à 128 clusters
+
+[NOTE.speaker]
+====
+🧪 **3 essais** avant de réussir à passer ce cap symbolique
+
+Problème principal :
+* déploiement 128 clusters EKS en simultanée
+====
+
+== Les temps de passages
+
+[cols="1,1,1", options="header"]
+|===
+| Clusters | Déploiement total | Connexions
+
+| 32
+| 17 minutes
+| 5 minutes
+
+| 64
+| 15 minutes
+| 2 minutes
+
+| 128
+| 19 minutes
+| 2 minutes 30
+
+|===
+
+[NOTE.speaker]
+====
+* **Temps des tests** : **environ 1 heure** 😅
+* Et pourtant, tout est **parallélisé**
+  * → Le facteur limitant :
+    * puissance des machines
+    * réseaux inter-clusters
+====
+
+== 🧨 Le mur des 256
+
+[NOTE.speaker]
+====
+* **5 essais** ont été nécessaires pour atteindre le sommet
+
+* Déployer **256 clusters en simultané** ?
+  → **Mission impossible**
+
+* Déploiement 128 en simultanée
+====
+
+== Les chiffres
+
+[cols="1,1,1", options="header"]
+|===
+| Clusters | Déploiement total | Connexions
+
+| 64
+| 15 minutes
+| 2 minutes
+
+| 128
+| 19 minutes
+| 2 minutes 30
+
+| 256
+| 40 minutes
+| 4 minutes 30
+
+|===

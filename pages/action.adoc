@@ -63,7 +63,7 @@ image::connection-answer.png[width=45%]
 Contrainte : Pas de création des connexions d'un même cluster en parallèle
 ====
 
-== Premier résultat avec 16 clusters
+== Premiers résultats avec 16 clusters
 
 [NOTE.speaker]
 ====
