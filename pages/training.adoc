@@ -1,10 +1,12 @@
 = Entraînement de l'agent
-:imagesdir: assets/default
+:imagesdir: assets/default/images
 
 == Terrain d’exercice : KinD
 
 * Un seul serveur
 * Docker
+
+image::kind-logo.png[width=45%]
 
 [NOTE.speaker]
 ====

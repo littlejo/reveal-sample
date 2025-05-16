@@ -3,7 +3,7 @@
 
 == !
 
-image::littlejo.jpg[]
+image::certifications.png[]
 
 [NOTE.speaker]
 ====

@@ -18,8 +18,7 @@
 * changement du nombre de clusters rapide
 ====
 
-== Couche réseau
-=== Plugin Container Network Interface (CNI)
+== Plugin CNI
 
 [NOTE.speaker]
 ====
@@ -30,8 +29,7 @@ Objectif principal: Établir une communication entre containers sur des serveurs
   * 🧬 Cilium
 ====
 
-== !
-=== Kube-Proxy
+== Kube-Proxy
 
 [NOTE.speaker]
 ====
