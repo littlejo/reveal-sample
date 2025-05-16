@@ -1,5 +1,5 @@
 .reveal.slide {
-    background-image: url("../images/mi-opening.jpg"), url("../images/logo.svg"), url("../images/mi.jpg");
+    background-image: url("../images/mi-opening.jpg"), url("../images/logo.svg"), url("../images/mi.png");
     background-size: 200px, 200px, 200px, auto;
     background-position:  bottom left, top left, top right, bottom;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
@@ -76,8 +76,17 @@ code {
     font-weight: bold;
 }
 
+.entrypoint .yann-intro-subtitle {
+    margin-top: 100px;
+    font-size: smaller;
+}
 
 .entrypoint .yann-intro-event {
+    margin-top: 100px;
+    font-size: smaller;
+}
+
+.yann-intro-date {
     margin-top: 100px;
     font-size: smaller;
 }

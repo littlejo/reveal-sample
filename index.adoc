@@ -18,13 +18,17 @@ image::assets/default/images/littlejo.jpg[yann]
 Joseph Ligier
 [.yann-role]
 Ingénieur Cloud
-Ambassadeur CNCF
-Kubestronaute
 a|[.yann-intro-title]
-Mission Impossible : 511 Meshed Kubernetes
+Mission : Impossible
+
+[.yann-intro-subtitle]
+511 Meshed Kubernetes
 
 [.yann-intro-event]
-Sunny tech : 26 juin 2025
+Exclusivement à la Sunny Tech
+
+[.yann-intro-date]
+Le 26 juin 2025
 |===
 
 include::pages/start.adoc[leveloffset=+1]
