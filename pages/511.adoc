@@ -70,7 +70,13 @@ image::511-7-regions.png[width=70%]
 
 == tests de 2 clusters par région
 
-== Les premiers tests sur 511 clusters
+== Les premiers tests sur 511 clusters 🤞
+
+image::511-terminal.png[width=70%]
+
+== Les premiers tests sur 511 clusters 😩
+
+image::511-excel.png[width=70%]
 
 == Dernier test
 

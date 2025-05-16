@@ -2,6 +2,10 @@
 
 == Passage à 128 clusters
 
+
+:imagesdir: assets/default/images
+image::eks-128.png[]
+
 [NOTE.speaker]
 ====
 🧪 **3 essais** avant de réussir à passer ce cap symbolique
@@ -40,6 +44,8 @@ Problème principal :
 ====
 
 == 🧨 Le mur des 256
+
+image::eks-256.png[]
 
 [NOTE.speaker]
 ====

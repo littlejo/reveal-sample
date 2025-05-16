@@ -1,4 +1,5 @@
 = Vérification en conditions réelles
+:imagesdir: assets/default/images
 
 == 🕵️ Surveillance passive
 
@@ -7,6 +8,8 @@
 cilium status
 cilium clustermesh status
 ----
+
+image::terminal-cilium-status.gif[width=90%]
 
 [NOTE.speaker]
 ====
@@ -36,6 +39,8 @@ cilium clustermesh status -o json
 cilium connectivity test --context cluster1 --multi-cluster cluster2
 ----
 
+image::clustermesh-test.png[width=80%]
+
 [NOTE.speaker]
 ====
 * 🔍 Lance une **batterie de tests**
@@ -61,7 +66,12 @@ cilium connectivity test --context cluster1 --multi-cluster cluster[2-511]
 
 == Terratest
 
+image::clustermesh-terratest.png[width=80%]
+
+[NOTE.speaker]
+====
 🛠️ Projet disponible ici :
 
 * 👉 https://github.com/littlejo/check-cilium-clustermesh
 * ✅ 5 tests différents
+====
