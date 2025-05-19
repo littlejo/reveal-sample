@@ -20,18 +20,17 @@ Problème principal :
 |===
 | Clusters | Déploiement total | Connexions
 
-| 32
-| 17 minutes
-| 5 minutes
+| pass:[<span style="color:gray;">32</span>]
+| pass:[<span style="color:gray;">17 minutes</span>]
+| pass:[<span style="color:gray;">5 minutes</span>]
 
-| 64
-| 15 minutes
-| 2 minutes
+| pass:[<span style="color:gray;">64</span>]
+| pass:[<span style="color:gray;">15 minutes</span>]
+| pass:[<span style="color:gray;">2 minutes</span>]
 
-| 128
-| 19 minutes
-| 2 minutes 30
-
+| pass:[<strong><span style="color:#3366cc;">128</span></strong>]
+| pass:[<strong><span style="color:#3366cc;">19 minutes</span></strong>]
+| pass:[<strong><span style="color:#3366cc;">2 minutes 30</span></strong>]
 |===
 
 [NOTE.speaker]
@@ -63,16 +62,16 @@ image::eks-256.png[]
 |===
 | Clusters | Déploiement total | Connexions
 
-| 64
-| 15 minutes
-| 2 minutes
+| pass:[<span style="color:gray;">64</span>]
+| pass:[<span style="color:gray;">15 minutes</span>]
+| pass:[<span style="color:gray;">2 minutes</span>]
 
-| 128
-| 19 minutes
-| 2 minutes 30
+| pass:[<span style="color:gray;">128</span>]
+| pass:[<span style="color:gray;">19 minutes</span>]
+| pass:[<span style="color:gray;">2 minutes 30</span>]
 
-| 256
-| 40 minutes
-| 4 minutes 30
+| pass:[<strong><span style="color:#3366cc;">256</span></strong>]
+| pass:[<strong><span style="color:#3366cc;">40 minutes</span></strong>]
+| pass:[<strong><span style="color:#3366cc;">4 minutes 30</span></strong>]
 
 |===

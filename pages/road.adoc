@@ -1,7 +1,7 @@
 = 🚀 En route vers les 256 clusters
 :imagesdir: assets/default/images
 
-== création des connexions 🧨
+== Création des connexions 🧨
 image::code-cilium-cli.png[width=80%]
 
 [NOTE.speaker]
@@ -87,12 +87,8 @@ Avec 32 tâches en parallèle on pourrait créer les connexions de 511 clusters 
 |===
 | Clusters | Déploiement total | Connexions
 
-| 32
-| 17 minutes
-| 5 minutes
+| 32 | 17 minutes | 5 minutes
 
-| 64
-| 15 minutes
-| 2 minutes
+| *64* | *15 minutes* | *2 minutes*
 
 |===
