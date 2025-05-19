@@ -70,9 +70,7 @@ image::pr.png[]
 🎯 Mise en œuvre de l’algorithme séquentiel sur une flotte de 32 clusters.
 ====
 
-== Amélioration : parallélisation
-
-🔧 Mise à jour des clusters — parallélisé ✅
+== Parallélisation
 
 image::pr-2.png[]
 
