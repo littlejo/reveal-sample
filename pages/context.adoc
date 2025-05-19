@@ -1,5 +1,7 @@
 = Contexte de la mission
-:imagesdir: assets/default
+:imagesdir: assets/default/images
+
+image::mi-briefing.png[]
 
 == 511 clusters Kubernetes
 
@@ -91,6 +93,7 @@ Technologies embarquées :
 
 == Communication entre 511 clusters
 
+:imagesdir: assets/default
 video::256-clusters.mp4[opts=autoplay,loop,muted,role=center,width=50%]
 
 [NOTE.speaker]

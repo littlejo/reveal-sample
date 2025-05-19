@@ -1,5 +1,6 @@
 = 🚀 En route vers les 256 clusters
 :imagesdir: assets/default/images
+image::mi-plane.png[]
 
 == Création des connexions 🧨
 image::code-cilium-cli.png[width=80%]

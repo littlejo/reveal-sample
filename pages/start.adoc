@@ -1,5 +1,7 @@
-= Identité
 :imagesdir: assets/default/images
+= Identité
+
+image::mi-id.png[]
 
 == !
 
