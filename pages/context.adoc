@@ -21,7 +21,7 @@ image::mi-briefing.png[]
 ====
 
 == Plugin CNI
-:imagesdir: assets/default/images
+image::cnis.png[]
 
 [NOTE.speaker]
 ====
@@ -55,6 +55,8 @@ Objectif principal: Load balancer du réseau Kubernetes
 🧬 Service Mesh intégré
 
 🏎️ Suppression de kube-proxy
+
+image::cilium-paint.png[width=50%]
 
 [NOTE.speaker]
 ====
