@@ -21,6 +21,7 @@ image::mi-briefing.png[]
 ====
 
 == Plugin CNI
+:imagesdir: assets/default/images
 
 [NOTE.speaker]
 ====
@@ -32,6 +33,7 @@ Objectif principal: Établir une communication entre containers sur des serveurs
 ====
 
 == Kube-Proxy
+image::kube-proxy.png[]
 
 [NOTE.speaker]
 ====
@@ -67,6 +69,7 @@ Technologies embarquées :
 ====
 
 == Cilium Cluster Mesh
+image::cilium-clustermesh.png[]
 
 [NOTE.speaker]
 ====
@@ -82,6 +85,8 @@ Technologies embarquées :
 ====
 
 == Communication entre deux clusters
+
+image::2-cluster.png[]
 
 [NOTE.speaker]
 ====
