@@ -86,12 +86,40 @@ image::cilium-clustermesh.png[]
   * 🧪 Nouveauté 1.15 : 511 clusters possibles
 ====
 
-== Communication entre deux clusters
+== 2 clusters
 
-image::2-cluster.png[]
+image::2-cluster-1.png[]
+[NOTE.speaker]
+====
+2 clusters kubernetes avec les agents Cilium qui s'occupent du réseau
+====
+
+== Activation
+
+image::2-cluster-2.png[]
 
 [NOTE.speaker]
 ====
+Il y a deux phases pour la création d'un cluster mesh.
+phase 1 : activation.
+ pod clustermesh-api : une base de données etcd qui récupère les données utiles pour le cluster mesh
+ svc pointe sur le pod clustermesh-api : va permetre de récupérer les données de clustermesh-api
+
+* Nodeport
+* loadbalancer
+* clusterip
+
+====
+
+== !
+
+image::2-cluster-3.svg[]
+
+[NOTE.speaker]
+====
+phase 2 : connexion
+Les agents cilium récupère les données de clustermesh-api
+
 * Configurations Mesh disponibles :
   * Cas 1 — A <=> B : Communication bidirectionnelle
   * Cas 2 — A => B : Un canal unilatéral

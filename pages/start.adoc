@@ -1,8 +1,10 @@
 :imagesdir: assets/default/images
+
 = Identité
 
 image::mi-id.png[]
 
+[.slide, data-timing=300]
 == !
 
 image::certifications.png[]
