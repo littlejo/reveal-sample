@@ -10,26 +10,7 @@
 :revealjs_totalTime: 3000
 
 [.intro-block]
-[cols="1,2",frame=none,grid=none]
-|===
-a|[.yann-intro]
-image::assets/default/images/littlejo.jpg[yann]
-[.yann-name]
-Joseph Ligier
-[.yann-role]
-Ingénieur Cloud
-a|[.yann-intro-title]
-Mission : Impossible
-
-[.yann-intro-subtitle]
-511 Meshed Kubernetes
-
-[.yann-intro-event]
-Exclusivement à la Sunny Tech
-
-[.yann-intro-date]
-Le 26 juin 2025
-|===
+image::cinema-front.jpg[width=50%]
 
 include::pages/start.adoc[leveloffset=+1]
 include::pages/context.adoc[leveloffset=+1]
