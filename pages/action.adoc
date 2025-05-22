@@ -59,7 +59,7 @@ image::aws-archi.png[width=50%]
 🎯 Objectif : Créer, connecter et tester jusqu’à 256 clusters Kubernetes
 ====
 
-== Tentative de paralléliser les connexions inter-clusters
+== Parallélisation des connexions
 
 image::connection-answer.png[width=45%]
 [NOTE.speaker]

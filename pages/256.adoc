@@ -16,11 +16,11 @@ Problème principal :
 * déploiement 128 clusters EKS en simultanée
 ====
 
-== Les temps de passages
+== !
 
 [cols="1,1,1", options="header"]
 |===
-| Clusters | Déploiement total | Connexions
+| Clusters | Déploiement | Connexions
 
 | pass:[<span style="color:gray;">32</span>]
 | pass:[<span style="color:gray;">17 minutes</span>]
@@ -58,11 +58,11 @@ image::eks-256.png[]
 * Déploiement 128 en simultanée
 ====
 
-== Les chiffres
+== !
 
 [cols="1,1,1", options="header"]
 |===
-| Clusters | Déploiement total | Connexions
+| Clusters | Déploiement | Connexions
 
 | pass:[<span style="color:gray;">64</span>]
 | pass:[<span style="color:gray;">15 minutes</span>]

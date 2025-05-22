@@ -84,7 +84,7 @@ Avec 32 tâches en parallèle on pourrait créer les connexions de 511 clusters 
 
 [cols="1,1,1", options="header"]
 |===
-| Clusters | Déploiement total | Connexions
+| Clusters | Déploiement | Connexions
 
 | pass:[<span style="color:gray;">32</span>]
 | pass:[<span style="color:gray;">17 minutes</span>]
