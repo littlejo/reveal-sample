@@ -1,5 +1,7 @@
 = Présentation du terrain d'action
 :imagesdir: assets/default/images
+image::mi-action.png[]
+//mi-4
 
 == Choix stratégique : AWS EKS
 
@@ -15,6 +17,8 @@
 ====
 
 == Limites imposées par AWS
+
+image::service-quota.png[]
 
 [NOTE.speaker]
 ====

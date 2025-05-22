@@ -1,5 +1,6 @@
 = Vérification en conditions réelles
 :imagesdir: assets/default/images
+image::mi-check.png[]
 
 == 🕵️ Surveillance passive
 

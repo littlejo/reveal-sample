@@ -1,5 +1,7 @@
-= Entraînement de l'agent
+= 🧗Entraînement de l'agent
 :imagesdir: assets/default/images
+image::mi-training.png[]
+//mi-2
 
 == Terrain d’exercice : KinD
 

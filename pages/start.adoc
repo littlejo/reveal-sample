@@ -2,9 +2,9 @@
 
 = Identité
 
-image::mi-id.png[]
+image::mi-id.png[width=50%]
+//MI-1
 
-[.slide, data-timing=300]
 == !
 
 image::certifications.png[]

@@ -1,4 +1,6 @@
-= 🧗 Objectif 256 clusters
+=  Objectif 256 clusters
+image::mi-256.png[]
+//mi-3
 
 == Passage à 128 clusters
 

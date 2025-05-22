@@ -1,5 +1,7 @@
 = 511 clusters
 :imagesdir: assets/default/images
+image::mi-511.png[]
+//mi-dead-reckoning
 
 == Comment se détacher de la limite AWS ?
 
