@@ -9,19 +9,19 @@ image::mi-511.png[]
 
 == !
 
-image::511-2-accounts.png[width=70%]
+image::511-2-accounts.svg[width=60%]
 
 == 7 comptes
 
 == !
 
-image::511-7-accounts.png[width=70%]
+image::511-7-accounts.svg[width=55%]
 
 == 7 régions
 
 == !
 
-image::511-7-regions.png[width=70%]
+image::511-7-regions.svg[width=55%]
 
 == Déploiement de déploiement :)
 
