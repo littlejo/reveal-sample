@@ -34,7 +34,7 @@ Objectif principal: Établir une communication entre containers sur des serveurs
 ====
 
 == Kube-Proxy
-image::kube-proxy.png[]
+image::kube-proxy.svg[]
 
 [NOTE.speaker]
 ====
