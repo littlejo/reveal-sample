@@ -1,4 +1,4 @@
-= Vérification en conditions réelles
+=  Vérification en conditions réelles
 :imagesdir: assets/default/images
 image::mi-check.png[]
 
@@ -40,7 +40,7 @@ cilium clustermesh status -o json
 cilium connectivity test --context cluster1 --multi-cluster cluster2
 ----
 
-image::clustermesh-test.png[width=80%]
+image::clustermesh-test.svg[width=80%]
 
 [NOTE.speaker]
 ====
@@ -67,7 +67,7 @@ cilium connectivity test --context cluster1 --multi-cluster cluster[2-511]
 
 == Terratest
 
-image::clustermesh-terratest.png[width=80%]
+image::clustermesh-terratest.svg[width=80%]
 
 [NOTE.speaker]
 ====

@@ -97,7 +97,7 @@ image::2-cluster-1.png[]
 
 == Activation
 
-image::2-cluster-2.png[]
+image::2-cluster-2.svg[]
 
 [NOTE.speaker]
 ====

@@ -19,8 +19,8 @@ image::certifications.png[]
 
 == 🔍 Dossiers Classifiés 🔍
 
-* Auteur d’un blog tech dédié à eBPF et Cilium
-* Contributeur à la certification Cilium (CCA)
-* Créateur d’un provider : Tf / Pulumi / Crossplane pour déployer Cilium
+* Blog tech dédié à eBPF et Cilium
+* Certification Cilium (CCA)
+* Provider Terraform pour déployer Cilium
 * Commits validés dans le repo officiel
-* Déclaré Labs Champion
+* Labs Champion
