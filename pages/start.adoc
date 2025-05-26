@@ -2,7 +2,7 @@
 
 = Identité
 
-image::mi-id.png[width=50%]
+image::mi-id.png[width=90%]
 //MI-1
 
 == !
