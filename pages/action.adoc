@@ -36,8 +36,6 @@ image::service-quota.png[]
 
 == Bonnes pratiques vs Réalité opérationnelle
 
-💡 Recommandation officielle d’AWS : “Un VPC par cluster EKS”
-
 [NOTE.speaker]
 ====
 💡 Recommandation officielle d’AWS : “Un VPC par cluster EKS”

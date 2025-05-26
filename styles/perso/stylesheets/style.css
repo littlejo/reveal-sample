@@ -1,8 +1,8 @@
 .reveal.slide {
-    background-image: url("../images/256-clusters.gif"), url("../images/logo.svg"), url("../images/mi.png");
-    background-size: 200px, 200px, 200px, auto;
-    background-position:  bottom left, top left, top right, bottom;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-image: url("../images/256-clusters.apng"), url("../images/logo.svg"), url("../images/mi.png");
+    background-size: 200px, 200px, 200px;
+    background-position:  bottom left, top left, top right;
+    background-repeat: no-repeat, no-repeat, no-repeat;
     color: #EFEFEF;
 }
 
