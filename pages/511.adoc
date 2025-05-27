@@ -9,7 +9,7 @@ image::mi-511.png[]
 
 == !
 
-image::511-2-accounts.svg[width=70%]
+image::511-2-accounts.svg[width=90%]
 
 == 7 comptes
 
@@ -23,7 +23,9 @@ image::511-7-accounts.svg[width=55%]
 
 image::511-7-regions.svg[width=55%]
 
-== Déploiement de déploiement :)
+== !
+
+image::511-7-regions-deployment.svg[width=80%]
 
 [NOTE.speaker]
 ====
