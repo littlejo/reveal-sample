@@ -34,7 +34,7 @@ image::511-7-regions-deployment.svg[width=80%]
 * https://github.com/littlejo/pulumi-multi-region
 ====
 
-== Pricing
+== 💰 Pricing 💰
 
 == !
 
