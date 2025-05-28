@@ -5,6 +5,9 @@ image::mi-briefing.png[]
 //mi-fallout
 
 == 511 clusters Kubernetes
+:imagesdir: assets/default
+
+video::511-clusters.mp4[opts=autoplay,loop,muted,role=center,width=50%]
 
 [NOTE.speaker]
 ====
@@ -22,6 +25,7 @@ image::mi-briefing.png[]
 ====
 
 == Plugin CNI
+:imagesdir: assets/default/images
 image::cnis.png[]
 
 [NOTE.speaker]
